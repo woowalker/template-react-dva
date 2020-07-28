@@ -6,11 +6,11 @@ export default {
     welcome: 'Yay! Welcome to dva!'
   },
   subscriptions: {
-    setup({ dispatch, history }) {  // eslint-disable-line
+    setup ({ dispatch, history }) {
     }
   },
   effects: {
-    *fetchTest({ payload, cb }, { call, put }) {  // eslint-disable-line
+    * fetchTest ({ payload, cb }, { call, put }) {
       const response = yield call(api['home/test'], payload, {
         method: 'POST',
         url: 'http://192.168.2.98:3112/api/PF/PageCustom/GetCustomPageConfigInfo',

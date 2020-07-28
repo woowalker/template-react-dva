@@ -1,7 +1,10 @@
+// 核心库
 import React, { useState } from 'react'
 import { connect } from 'dva'
+// 组件库
 import { Button } from 'antd'
-import styles from './index.css'
+// 样式
+import '@/styles/routes/home.less'
 
 function HomePage (props) {
   function setWelcome (welcome) {
@@ -48,8 +51,8 @@ function HomePage (props) {
   })
   const { home, common, loading } = props
   return (
-    <div className={styles.normal}>
-      <h1 className={styles.title}>{home.welcome}</h1>
+    <div>
+      <h1>{home.welcome}</h1>
       <Button type='primary' onClick={() => setWelcome('你好')}>更新props欢迎词</Button>
       <h1>本地state count: {state.count}</h1>
       <Button type='primary' onClick={() => setCount(10)}>更新state count</Button>

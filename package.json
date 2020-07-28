@@ -1,7 +1,7 @@
 {
-  "name": "opt_visio",
+  "name": "react_dva",
   "version": "0.1.0",
-  "description": "奥普拓矢量绘图客户端",
+  "description": "dva框架下的react项目示例",
   "author": "qxiong",
   "private": true,
   "scripts": {
@@ -20,12 +20,14 @@
     "echarts": "^4.8.0",
     "echarts-for-react": "^2.0.16",
     "es6-promise": "^4.2.8",
+    "query-string": "^6.13.1",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "babel-plugin-dva-hmr": "^0.3.2",
+    "es5-imcompatible-versions": "^0.1.63",
     "eslint": "^4.14.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-config-standard-react": "^9.2.0",

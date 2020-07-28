@@ -10,6 +10,9 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'react/prop-types': 'off',
     'dot-notation': 'off',
+    'camelcase': 'off',
+    'jsx-a11y/anchor-has-content': 'off',
+    'react/jsx-fragments': 'off',
     /**
      * eslint-config-standard 13.0 版本开始默认增加这三个规则
      * 但这里应该是误报，所以将其关闭

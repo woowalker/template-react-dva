@@ -4,11 +4,18 @@ import { history } from '@/plugins/history'
 // loading 插件，自动处理接口的请求状态，详见 README.md
 import createLoading from 'dva-loading'
 
-import './index.css'
+import '@/styles/index.less'
 
 // 1. Initialize
+// onError hook 必须配置，否则无法处理 effects 里面的报错
 const app = dva({
-  history
+  history,
+  onError (error, dispatch) {
+    dispatch({
+      type: 'common/onError',
+      error
+    })
+  }
 })
 
 // 2. Plugins

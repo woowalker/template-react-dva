@@ -4,7 +4,7 @@ export default {
     welcome: '欢迎使用echarts'
   },
   subscriptions: {
-    setup({ dispatch, history }) {  // eslint-disable-line
+    setup ({ dispatch, history }) {
     }
   },
   effects: {},
