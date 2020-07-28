@@ -1,14 +1,16 @@
-@form-prefix-cls: ~'@{ant-prefix}-form';
+@import '../variables.less';
+
+@form-prefix-cls     : ~'@{ant-prefix}-form';
 @form-item-prefix-cls: ~'@{form-prefix-cls}-item';
 
 .@{form-item-prefix-cls} {
   margin-bottom: 8px;
-  
+
   // ==============================================================
   // =                            Label                           =
   // ==============================================================
   &-label {
-    > label {
+    >label {
       font-size: 12px;
     }
   }
