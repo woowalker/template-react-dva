@@ -1,10 +1,5 @@
 @import '../func.less';
-/**
- * 因为 antd 配置了按需引入，所以在具体页面中引入的 antd 组件也会按需引入其对应的样式文件
- * 因此需要在这里引入对 antd 组件样式重写的样式文件（而不是在 styles/index.less 文件中引入）
- * 否则就会因为样式引入的先后顺序问题，导致此处对 antd 样式的重写无效
- */
-@import '../antd/index.less';
+@import 'dynamic.less';
 
 @home: routes-home;
 
