@@ -7,9 +7,9 @@
   "scripts": {
     "start": "set PORT=8060 && roadhog server",
     "build": "roadhog build",
-    "lint": "eslint --ext .js src test",
+    "lint": "eslint --fix --max-warnings 0 src",
     "precommit": "npm run lint",
-    "precommit-msg": "echo 'ESLint预提交检查中...' && exit 0"
+    "precommit-msg": "echo 'ESLint Checking, If Process Stop, Check Commit File And Fix Error Or Warning...'"
   },
   "dependencies": {
     "antd": "^4.3.3",
@@ -44,5 +44,7 @@
     "redbox-react": "^1.4.3",
     "roadhog": "^2.5.0-beta.4"
   },
-  "pre-commit": ["precommit"]
+  "pre-commit": [
+    "precommit"
+  ]
 }
